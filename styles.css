@@ -1,2 +1,28 @@
 
 /* Your CSS Code here. */
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center the grid vertically */
+    margin: 0;     /* Remove default margin */
+}
+
+.holder {
+    display: grid;                          /* Enable grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+    grid-template-rows: repeat(2, 1fr);    /* Create 2 equal rows */
+    width: 200px;                           /* Total width of the grid */
+    height: 200px;                          /* Total height of the grid */
+    gap: 10px;                              /* Optional: space between grid items */
+}
+
+.item {
+    background-color: lightblue;            /* Background color for visibility */
+    display: flex;                          /* Enable flexbox for centering */
+    justify-content: center;                /* Center content horizontally */
+    align-items: center;                   /* Center content vertically */
+    border: 1px solid #333;                 /* Border for visibility */
+    font-size: 24px;                       /* Font size for the item numbers */
+}
